@@ -1,61 +1,122 @@
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #e0f7fa, #80deea);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+Body {
+    Margin: 0;
+    Font-family: Arial, sans-serif;
+    Color: #333;
 }
 
-.container {
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 600px;
-    padding: 20px;
-    text-align: center;
+Header {
+    Background-color: #007bff;
+    Color: white;
+    Padding: 20px 0;
 }
 
-.question-header h2 {
-    margin: 0;
-    color: #00796b;
+Nav {
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
+    Padding: 0 50px;
 }
 
-.question-content p {
-    font-size: 1.2em;
-    margin: 20px 0;
-    color: #004d40;
+Nav .logo {
+    Display: flex;
+    Align-items: center;
 }
 
-.options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+Nav .logo img {
+    Height: 40px;
+    Margin-right: 10px;
 }
 
-.option {
-    background: #e0f2f1;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 500px;
-    margin: 10px 0;
-    padding: 10px;
-    transition: border-color 0.3s;
+Nav ul {
+    List-style: none;
+    Display: flex;
+    Margin: 0;
+    Padding: 0;
 }
 
-.option input {
-    display: none;
+Nav ul li {
+    Margin: 0 15px;
 }
 
-.option span {
-    font-size: 1.1em;
-    color: #00796b;
+Nav ul li a {
+    Color: white;
+    Text-decoration: none;
+    Font-size: 16px;
 }
 
-.option:hover, .option input:checked + span {
-    border-color: #00796b;
-    background: #b2dfdb;
+Nav .auth-buttons a {
+    Color: white;
+    Text-decoration: none;
+    Margin-left: 15px;
+    Padding: 10px 20px;
+    Border-radius: 5px;
+    Border: 1px solid white;
+}
+
+Nav .auth-buttons .post-job {
+    Background-color: #28a745;
+}
+
+.hero {
+    Text-align: center;
+    Padding: 50px 0;
+    Position: relative;
+}
+
+.hero h1 {
+    Font-size: 36px;
+    Margin: 0;
+}
+
+.hero h2 {
+    Font-size: 24px;
+    Margin: 10px 0;
+}
+
+.hero p {
+    Font-size: 16px;
+    Margin: 20px 0;
+}
+
+.hero button {
+    Background-color: #28a745;
+    Color: white;
+    Border: none;
+    Padding: 15px 30px;
+    Font-size: 16px;
+    Border-radius: 5px;
+    Cursor: pointer;
+}
+
+.hero .hero-image {
+    Position: absolute;
+    Bottom: -20px;
+    Right: 50px;
+    Height: 200px;
+}
+
+.search-bar {
+    Display: flex;
+    Justify-content: center;
+    Padding: 20px 0;
+    Background-color: #f8f9fa;
+}
+
+.search-bar input,
+.search-bar select {
+    Padding: 10px;
+    Margin: 0 10px;
+    Border: 1px solid #ddd;
+    Border-radius: 5px;
+    Font-size: 16px;
+}
+
+.search-bar button {
+    Background-color: #007bff;
+    Color: white;
+    Border: none;
+    Padding: 10px 20px;
+    Font-size: 16px;
+    Border-radius: 5px;
+    Cursor: pointer;
 }
